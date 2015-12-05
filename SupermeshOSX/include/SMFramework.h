@@ -1,5 +1,5 @@
-#ifndef SupermeshOSX_SMFramework_h
-#define SupermeshOSX_SMFramework_h
+#ifndef SMFramework_h
+#define SMFramework_h
 
 //------------------------------------------------------------------------
 // Basic includes

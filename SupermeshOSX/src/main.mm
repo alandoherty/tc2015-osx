@@ -2,8 +2,7 @@
 #import <Cocoa/Cocoa.h>
 #include <Awesomium/WebCore.h>
 #include <Awesomium/STLHelpers.h>
-
-using namespace Awesomium;
+#include "SMDataSource.h"
 
 @interface AppDelegate : NSObject<NSApplicationDelegate> {
   NSTimer *timer;
@@ -20,35 +19,6 @@ using namespace Awesomium;
 @property (assign) Awesomium::WebView* webView;
 - (void)windowDidResize:(NSNotification *)notification;
 @end
-
-
-
-
-
-class SMDataSource : public Awesomium::DataSource {
-public:
-    SMDataSource() {}
-    virtual ~SMDataSource() {}
-    
-    virtual void OnRequest(int request_id,
-                           const Awesomium::ResourceRequest& request,
-                           const Awesomium::WebString& path);
-    
-};
-
-const char* html_str = "fuck SDL";
-
-
-void SMDataSource::OnRequest(int request_id,
-                             const Awesomium::ResourceRequest& request,
-                             const Awesomium::WebString& path) {
-    if (path == WSLit("index.html"))
-        SendResponse(request_id,
-                     strlen(html_str),
-                     (const unsigned char*)html_str,
-                     WSLit("text/html"));
-}
-
 
 int main(int argc, const char **argv)
 {

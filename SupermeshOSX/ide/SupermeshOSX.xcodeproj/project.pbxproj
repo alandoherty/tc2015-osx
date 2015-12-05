@@ -11,6 +11,7 @@
 		398D538B1C134192008218FD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D538A1C134192008218FD /* Cocoa.framework */; };
 		398D538D1C134197008218FD /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D538C1C134197008218FD /* Carbon.framework */; };
 		398D53B21C135425008218FD /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 398D53B11C135425008218FD /* main.mm */; };
+		398D53E81C1367DA008218FD /* SMDataSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 398D53E71C1367DA008218FD /* SMDataSource.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		398D53921C1341B7008218FD /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		398D539C1C13424D008218FD /* SMFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMFramework.h; path = ../include/SMFramework.h; sourceTree = SOURCE_ROOT; };
 		398D53B11C135425008218FD /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = ../src/main.mm; sourceTree = SOURCE_ROOT; };
+		398D53E71C1367DA008218FD /* SMDataSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SMDataSource.cpp; path = ../src/SMDataSource.cpp; sourceTree = SOURCE_ROOT; };
+		398D53E91C1367E6008218FD /* SMDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMDataSource.h; path = ../include/SMDataSource.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,8 @@
 		3923A6671C133B4D0018B663 /* SupermeshOSX */ = {
 			isa = PBXGroup;
 			children = (
+				398D53E91C1367E6008218FD /* SMDataSource.h */,
+				398D53E71C1367DA008218FD /* SMDataSource.cpp */,
 				398D53B11C135425008218FD /* main.mm */,
 				398D539C1C13424D008218FD /* SMFramework.h */,
 			);
@@ -144,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				398D53E81C1367DA008218FD /* SMDataSource.cpp in Sources */,
 				398D53B21C135425008218FD /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
