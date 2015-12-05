@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		398D53851C133CAA008218FD /* Awesomium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53841C133CAA008218FD /* Awesomium.framework */; };
+		398D53891C133ED8008218FD /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53881C133ED8008218FD /* libSDL2.a */; };
+		398D538B1C134192008218FD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D538A1C134192008218FD /* Cocoa.framework */; };
+		398D538D1C134197008218FD /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D538C1C134197008218FD /* Carbon.framework */; };
+		398D538F1C13419D008218FD /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D538E1C13419D008218FD /* CoreAudio.framework */; };
+		398D53911C1341B0008218FD /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53901C1341B0008218FD /* IOKit.framework */; };
+		398D53971C1341CA008218FD /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53961C1341CA008218FD /* AudioUnit.framework */; };
+		398D53991C1341D3008218FD /* ForceFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53981C1341D3008218FD /* ForceFeedback.framework */; };
+		398D539B1C1341E1008218FD /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D539A1C1341E1008218FD /* libiconv.dylib */; };
+		398D539E1C1343C7008218FD /* SMWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 398D539D1C1343C7008218FD /* SMWindow.cpp */; };
+		398D53A11C13464C008218FD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3923A66F1C133BCD0018B663 /* main.cpp */; };
+		398D53A31C134683008218FD /* SMApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 398D53A21C134683008218FD /* SMApplication.cpp */; };
+		398D53A71C134DAE008218FD /* SMTextureSurface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 398D53A61C134DAE008218FD /* SMTextureSurface.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3923A6631C133B4D0018B663 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3923A6651C133B4D0018B663 /* SupermeshOSX */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SupermeshOSX; sourceTree = BUILT_PRODUCTS_DIR; };
+		3923A66F1C133BCD0018B663 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../src/main.cpp; sourceTree = SOURCE_ROOT; };
+		398D53841C133CAA008218FD /* Awesomium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Awesomium.framework; path = /Library/Frameworks/Awesomium.framework; sourceTree = "<absolute>"; };
+		398D53881C133ED8008218FD /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = ../third/sdl2/lib/libSDL2.a; sourceTree = "<group>"; };
+		398D538A1C134192008218FD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		398D538C1C134197008218FD /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		398D538E1C13419D008218FD /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		398D53901C1341B0008218FD /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		398D53921C1341B7008218FD /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		398D53941C1341C2008218FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		398D53961C1341CA008218FD /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		398D53981C1341D3008218FD /* ForceFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForceFeedback.framework; path = System/Library/Frameworks/ForceFeedback.framework; sourceTree = SDKROOT; };
+		398D539A1C1341E1008218FD /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		398D539C1C13424D008218FD /* SMFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMFramework.h; path = ../include/SMFramework.h; sourceTree = SOURCE_ROOT; };
+		398D539D1C1343C7008218FD /* SMWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SMWindow.cpp; path = ../src/SMWindow.cpp; sourceTree = SOURCE_ROOT; };
+		398D539F1C1343F5008218FD /* SMWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMWindow.h; path = ../include/SMWindow.h; sourceTree = SOURCE_ROOT; };
+		398D53A21C134683008218FD /* SMApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SMApplication.cpp; path = ../src/SMApplication.cpp; sourceTree = SOURCE_ROOT; };
+		398D53A41C13469C008218FD /* SMApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMApplication.h; path = ../include/SMApplication.h; sourceTree = SOURCE_ROOT; };
+		398D53A51C134DA6008218FD /* SMTextureSurface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMTextureSurface.h; path = ../include/SMTextureSurface.h; sourceTree = "<group>"; };
+		398D53A61C134DAE008218FD /* SMTextureSurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SMTextureSurface.cpp; path = ../src/SMTextureSurface.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3923A6621C133B4D0018B663 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				398D539B1C1341E1008218FD /* libiconv.dylib in Frameworks */,
+				398D53991C1341D3008218FD /* ForceFeedback.framework in Frameworks */,
+				398D53971C1341CA008218FD /* AudioUnit.framework in Frameworks */,
+				398D53911C1341B0008218FD /* IOKit.framework in Frameworks */,
+				398D538F1C13419D008218FD /* CoreAudio.framework in Frameworks */,
+				398D538D1C134197008218FD /* Carbon.framework in Frameworks */,
+				398D538B1C134192008218FD /* Cocoa.framework in Frameworks */,
+				398D53891C133ED8008218FD /* libSDL2.a in Frameworks */,
+				398D53851C133CAA008218FD /* Awesomium.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3923A65C1C133B4D0018B663 = {
+			isa = PBXGroup;
+			children = (
+				398D53A01C134450008218FD /* Frameworks */,
+				3923A6671C133B4D0018B663 /* SupermeshOSX */,
+				3923A6661C133B4D0018B663 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3923A6661C133B4D0018B663 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3923A6651C133B4D0018B663 /* SupermeshOSX */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3923A6671C133B4D0018B663 /* SupermeshOSX */ = {
+			isa = PBXGroup;
+			children = (
+				398D53A61C134DAE008218FD /* SMTextureSurface.cpp */,
+				398D53A51C134DA6008218FD /* SMTextureSurface.h */,
+				3923A66F1C133BCD0018B663 /* main.cpp */,
+				398D539C1C13424D008218FD /* SMFramework.h */,
+				398D539D1C1343C7008218FD /* SMWindow.cpp */,
+				398D539F1C1343F5008218FD /* SMWindow.h */,
+				398D53A21C134683008218FD /* SMApplication.cpp */,
+				398D53A41C13469C008218FD /* SMApplication.h */,
+			);
+			path = SupermeshOSX;
+			sourceTree = "<group>";
+		};
+		398D53A01C134450008218FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				398D539A1C1341E1008218FD /* libiconv.dylib */,
+				398D53981C1341D3008218FD /* ForceFeedback.framework */,
+				398D53961C1341CA008218FD /* AudioUnit.framework */,
+				398D53941C1341C2008218FD /* Foundation.framework */,
+				398D53921C1341B7008218FD /* CoreFoundation.framework */,
+				398D53901C1341B0008218FD /* IOKit.framework */,
+				398D538E1C13419D008218FD /* CoreAudio.framework */,
+				398D538C1C134197008218FD /* Carbon.framework */,
+				398D538A1C134192008218FD /* Cocoa.framework */,
+				398D53881C133ED8008218FD /* libSDL2.a */,
+				398D53841C133CAA008218FD /* Awesomium.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3923A6641C133B4D0018B663 /* SupermeshOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3923A66C1C133B4D0018B663 /* Build configuration list for PBXNativeTarget "SupermeshOSX" */;
+			buildPhases = (
+				3923A6611C133B4D0018B663 /* Sources */,
+				3923A6621C133B4D0018B663 /* Frameworks */,
+				3923A6631C133B4D0018B663 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SupermeshOSX;
+			productName = SupermeshOSX;
+			productReference = 3923A6651C133B4D0018B663 /* SupermeshOSX */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3923A65D1C133B4D0018B663 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Alan Doherty";
+				TargetAttributes = {
+					3923A6641C133B4D0018B663 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 3923A6601C133B4D0018B663 /* Build configuration list for PBXProject "SupermeshOSX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3923A65C1C133B4D0018B663;
+			productRefGroup = 3923A6661C133B4D0018B663 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3923A6641C133B4D0018B663 /* SupermeshOSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3923A6611C133B4D0018B663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				398D53A31C134683008218FD /* SMApplication.cpp in Sources */,
+				398D53A11C13464C008218FD /* main.cpp in Sources */,
+				398D539E1C1343C7008218FD /* SMWindow.cpp in Sources */,
+				398D53A71C134DAE008218FD /* SMTextureSurface.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3923A66A1C133B4D0018B663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3923A66B1C133B4D0018B663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3923A66D1C133B4D0018B663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CONFIGURATION_BUILD_DIR = "../bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks/Awesomium.framework/Versions/A",
+					"$(ProjectDir)/../third/sdl2/lib/**",
+					"/Users/alandoherty/Desktop/TechCrunch2015/tc2015-osx/SupermeshOSX/third/sdl2/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../include/**";
+			};
+			name = Debug;
+		};
+		3923A66E1C133B4D0018B663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CONFIGURATION_BUILD_DIR = "../bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks/Awesomium.framework/Versions/A",
+					"$(ProjectDir)/../third/sdl2/lib/**",
+					"/Users/alandoherty/Desktop/TechCrunch2015/tc2015-osx/SupermeshOSX/third/sdl2/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../include/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3923A6601C133B4D0018B663 /* Build configuration list for PBXProject "SupermeshOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3923A66A1C133B4D0018B663 /* Debug */,
+				3923A66B1C133B4D0018B663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3923A66C1C133B4D0018B663 /* Build configuration list for PBXNativeTarget "SupermeshOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3923A66D1C133B4D0018B663 /* Debug */,
+				3923A66E1C133B4D0018B663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3923A65D1C133B4D0018B663 /* Project object */;
+}
