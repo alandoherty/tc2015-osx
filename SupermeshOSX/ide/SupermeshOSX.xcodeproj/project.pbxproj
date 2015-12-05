@@ -46,13 +46,7 @@
 		398D53981C1341D3008218FD /* ForceFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForceFeedback.framework; path = System/Library/Frameworks/ForceFeedback.framework; sourceTree = SDKROOT; };
 		398D539A1C1341E1008218FD /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		398D539C1C13424D008218FD /* SMFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMFramework.h; path = ../include/SMFramework.h; sourceTree = SOURCE_ROOT; };
-		398D539D1C1343C7008218FD /* SMWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SMWindow.cpp; path = ../src/SMWindow.cpp; sourceTree = SOURCE_ROOT; };
-		398D539F1C1343F5008218FD /* SMWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMWindow.h; path = ../include/SMWindow.h; sourceTree = SOURCE_ROOT; };
-		398D53A21C134683008218FD /* SMApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SMApplication.cpp; path = ../src/SMApplication.cpp; sourceTree = SOURCE_ROOT; };
-		398D53A41C13469C008218FD /* SMApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMApplication.h; path = ../include/SMApplication.h; sourceTree = SOURCE_ROOT; };
 		398D53A81C134E38008218FD /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		398D53AE1C135159008218FD /* SMSurface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMSurface.h; path = ../include/SMSurface.h; sourceTree = SOURCE_ROOT; };
-		398D53AF1C135171008218FD /* SMSurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SMSurface.cpp; path = ../src/SMSurface.cpp; sourceTree = SOURCE_ROOT; };
 		398D53B11C135425008218FD /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = ../src/main.mm; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -99,12 +93,6 @@
 			children = (
 				398D53B11C135425008218FD /* main.mm */,
 				398D539C1C13424D008218FD /* SMFramework.h */,
-				398D539D1C1343C7008218FD /* SMWindow.cpp */,
-				398D539F1C1343F5008218FD /* SMWindow.h */,
-				398D53A21C134683008218FD /* SMApplication.cpp */,
-				398D53A41C13469C008218FD /* SMApplication.h */,
-				398D53AE1C135159008218FD /* SMSurface.h */,
-				398D53AF1C135171008218FD /* SMSurface.cpp */,
 			);
 			path = SupermeshOSX;
 			sourceTree = "<group>";

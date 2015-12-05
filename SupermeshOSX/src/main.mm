@@ -1,3 +1,4 @@
+#include "SMFramework.h"
 #import <Cocoa/Cocoa.h>
 #include <Awesomium/WebCore.h>
 #include <Awesomium/STLHelpers.h>
@@ -27,7 +28,7 @@ int main(int argc, const char **argv)
                                                     backing:NSBackingStoreBuffered defer:NO]
                       autorelease];
   [window cascadeTopLeftFromPoint:NSMakePoint(20,20)];
-  [window setTitle:@"Awesomium Sample Cocoa"];
+  [window setTitle:@APP_NAME];
   
   // Create the WebCore
   Awesomium::WebConfig config;
@@ -36,7 +37,7 @@ int main(int argc, const char **argv)
   // Create our WebView and start loading a certain URL
   Awesomium::WebView* view = core->CreateWebView(800, 600, 0, 
     Awesomium::kWebViewType_Window);
-  view->LoadURL(Awesomium::WebURL(Awesomium::WSLit("http://www.google.com")));
+  view->LoadURL(Awesomium::WebURL(Awesomium::WSLit("file:///Users/alandoherty/Desktop/TechCrunch2015/tc2015-osx/OSXWeb/index.html")));
   
   // Add our WebView to the Window's content view
   NSView* contentsContainer = [window contentView];
