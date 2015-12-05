@@ -24,19 +24,69 @@ function setWorkPercentage() {
     });
 }
 
+function addDevice(device) {
+    console.log('adding device');
+    $('#clientContainer').append('<div class="row client hdn device' + device.id + '" devID="' + device.id + '">' + '<div class="devContainer col-md-2">' +
+                                    '<img src="images/devices/' + device.type + '.png" class="device"/>' +
+                                    '</div>' +
+                                    '<div class="name col-md-4">' + device.name + '</div>' +
+                                    '<div class="work col-md-2">' + device.work + '</div>' +
+                                    '<div class="status col-md-4"><span class="' + device.statusCode + '">' + device.statusText + '</span>' +
+                                    '</div> </div>');
+
+    // make sure to update the UI agter every addition
+    setLineHeights();
+    $('.app-clients').text(parseInt($('.app-clients').text()) + 1);
+
+    $('.device' + device.id).fadeIn(1500);
+}
+
+function removeDevice(deviceID) {
+    $('.device' + deviceID).fadeOut(800);
+}
+
 $(document).ready(function() {
     setLineHeights();
 
-    var line = new ProgressBar.Line('#progressBar');
+    var seconds = 15;
+
+    var line = new ProgressBar.Circle('#progressBar', {
+        strokeWidth: 4,
+        color: '#3498db',
+        text: {
+            value: "00:15",
+            style: {
+                color: "#fff"
+            }
+        },
+    });
     line.animate(1.0, {
-        duration: 800
+        duration: 15000
     }, function() {
         console.log('Animation has finished');
     });
+
+    setInterval(function() {
+        seconds--;
+        if(seconds < 10) {
+            line.setText("00:0" + seconds);
+        } else {
+            line.setText("00:" + seconds);
+        }
+    }, 1000);
 
     setAppStatus("online");
     setAppClients(1);
     setAppTask("testing this system");
 
     setWorkPercentage();
+
+    addDevice({
+        id: 2,
+        type: "computer",
+        name: "Test 123",
+        work: "0%",
+        statusCode: "error",
+        statusText: "lost connection"
+    })
 });

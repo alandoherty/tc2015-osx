@@ -5,6 +5,7 @@ html, body, .container {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Geomanist';
+    overflow-x: hidden;
 }
 
 #sidebar {
@@ -30,6 +31,8 @@ html, body, .container {
 
 #sidebar .completion {
     width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
     position: absolute;
     bottom: 0;
     text-align: center;
@@ -41,6 +44,10 @@ h1 {
 
 }
 
+.hdn {
+    display: none;
+}
+
 #tagline {
     font-weight: 100;
     font-style: italic;
@@ -48,6 +55,7 @@ h1 {
     font-size: 24px;
 }
 
+/*
 #progressBar {
     position: absolute;
     bottom: 0;
@@ -56,7 +64,7 @@ h1 {
     margin: 0;
     padding: 0;
     background: #95a5a6;
-}
+}*/
 
 .aps {
     font-weight: 100;
@@ -64,6 +72,10 @@ h1 {
 
 .good {
     color: #2ecc71;
+}
+
+.error {
+    color: #e74c3c;
 }
 
 .contentContainer {
@@ -76,6 +88,8 @@ h1 {
     color: #fff;
     background: #95a5a6;
     padding: 15px;
+    padding-left: 30px;
+    border-bottom: 4px solid #7f8c8d;
 }
 
 #rowHeader .row {
@@ -83,23 +97,32 @@ h1 {
     font-size: 18px;
 }
 
-#rowHeader .row div {
+#rowHeader .row div, #clientContainer .row div {
     margin: 0;
     padding: 0;
 }
 
 #clientContainer {
     margin-top: 10px;
+    margin-left: 15px;
 }
 
 #clientContainer .client {
     padding: 10px 0;
 }
 
+#clientContainer .client .devContainer {
+    text-align: center;
+}
 #clientContainer .client .device {
-    width: 100%;
+    width: 50%;
+    margin-left: -15px;
 }
 
 #clientContainer .client {
     font-size: 36px;
+}
+
+#clientContainer .client .name {
+    padding-left: 15px;
 }

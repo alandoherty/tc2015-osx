@@ -14,8 +14,8 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
@@ -36,47 +36,45 @@
             <h3><span class="aps app-task"></span></h3>
         </div>
     </div>
-    <div class="completion">
-        23:44
+    <div id="progressBar" class="completion">
     </div>
 </div>
 <div class="col-md-9 contentContainer">
     <div id="rowHeader" class="container">
         <div class="row">
-            <div class="col-md-1">
+            <div class="col-md-2">
                 Icon
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 Device Name
             </div>
             <div class="col-md-2">
                 %ve work
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 Status
             </div>
         </div>
     </div>
     <div id="clientContainer" class="container">
-        <div class="row client" devID="1">
-            <div class="col-md-1">
+        <div class="row client device1" devID="1">
+            <div class="devContainer col-md-2">
                 <img src="images/devices/iPhone.png" class="device"/>
             </div>
-            <div class="name col-md-3">
+            <div class="name col-md-4">
                 Jamie's iPhone
             </div>
             <div class="work col-md-2">
                 24%
             </div>
-            <div class="status col-md-3">
+            <div class="status col-md-4">
                 <span class="good">encoding</span>
             </div>
         </div>
     </div>
 </div>
-<div id="progressBar" class="col-md-9"></div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <!-- progress.js-->
 <script src="js/progressbar.min.js"></script>
 <!-- countdown.js -->
