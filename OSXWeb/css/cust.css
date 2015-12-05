@@ -1,0 +1,104 @@
+html, body, .container {
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Geomanist';
+}
+
+#sidebar {
+    height: 100%;
+    background: #34495e;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar .header {
+    background: #3498db;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 45px;
+}
+
+#sidebar .statusHeaders {
+    text-align: right;
+    padding-left: 25px;
+}
+
+#sidebar .completion {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 48px;
+    margin: 25px 0px;
+}
+
+h1 {
+
+}
+
+#tagline {
+    font-weight: 100;
+    font-style: italic;
+    line-height: 24px;
+    font-size: 24px;
+}
+
+#progressBar {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    background: #95a5a6;
+}
+
+.aps {
+    font-weight: 100;
+}
+
+.app-status {
+    color: #2ecc71;
+}
+
+.contentContainer {
+    margin: 0px;
+    padding: 0px;
+}
+
+/** the table of devices **/
+#rowHeader {
+    background: #95a5a6;
+    padding: 15px;
+}
+
+#rowHeader .row {
+    margin: 0px;
+    font-size: 18px;
+}
+
+#rowHeader .row div {
+    margin: 0;
+    padding: 0;
+}
+
+#clientContainer {
+    margin-top: 10px;
+}
+
+#clientContainer .client {
+    padding: 10px 0;
+}
+
+#clientContainer .client .device {
+    width: 100%;
+}
+
+#clientContainer .client .name {
+    font-size: 36px;
+}
