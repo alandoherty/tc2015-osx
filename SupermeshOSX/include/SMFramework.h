@@ -5,6 +5,9 @@
 // Basic includes
 //------------------------------------------------------------------------
 #include <cstdint>
+#include <iostream>
+#include <cstring>
+#include <cstdlib>
 
 //------------------------------------------------------------------------
 // Basic defines

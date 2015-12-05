@@ -1,9 +1,12 @@
 #include "SMApplication.h"
+#include "SMSurface.h"
 #include <Awesomium/WebCore.h>
 #include <Awesomium/STLHelpers.h>
 #include <SDL2/SDL.h>
-#include <Awesomium/common/
+
 using namespace Awesomium;
+
+#define WEBCORE static_cast<WebCore*>(m_WebCore)
 
 void SMApplication::Run(){
     while(true) {
@@ -15,14 +18,14 @@ void SMApplication::Run(){
         m_Window->Flip();
     }
     
-    WebCore* core = WebCore::Initialize(WebConfig());
     
-    WebView* view = core->CreateWebView(APP_WIDTH, APP_HEIGHT);
+    
+    WebView* view = WEBCORE->CreateWebView(APP_WIDTH, APP_HEIGHT);
     view->LoadURL(WebURL(WSLit("http://google.co.uk")));
     
     // finish loading the page
     while (view->IsLoading())
-        core->Update();
+        WEBCORE->Update();
     
     
 }
@@ -30,6 +33,7 @@ void SMApplication::Run(){
 void SMApplication::Initialize() {
     // initialize awesomium
     m_WebCore = (WebCore*)WebCore::Initialize(WebConfig());
+    WEBCORE->set_surface_factory(new SMSurfaceFactory());
     
     // create window
     m_Window = new SMWindow(APP_NAME, APP_WIDTH, APP_HEIGHT);

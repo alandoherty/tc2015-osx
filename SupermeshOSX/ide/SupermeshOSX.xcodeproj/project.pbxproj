@@ -16,10 +16,8 @@
 		398D53971C1341CA008218FD /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53961C1341CA008218FD /* AudioUnit.framework */; };
 		398D53991C1341D3008218FD /* ForceFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53981C1341D3008218FD /* ForceFeedback.framework */; };
 		398D539B1C1341E1008218FD /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D539A1C1341E1008218FD /* libiconv.dylib */; };
-		398D539E1C1343C7008218FD /* SMWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 398D539D1C1343C7008218FD /* SMWindow.cpp */; };
-		398D53A11C13464C008218FD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3923A66F1C133BCD0018B663 /* main.cpp */; };
-		398D53A31C134683008218FD /* SMApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 398D53A21C134683008218FD /* SMApplication.cpp */; };
-		398D53A71C134DAE008218FD /* SMTextureSurface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 398D53A61C134DAE008218FD /* SMTextureSurface.cpp */; };
+		398D53A91C134E38008218FD /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53A81C134E38008218FD /* OpenGL.framework */; };
+		398D53B21C135425008218FD /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 398D53B11C135425008218FD /* main.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,7 +34,6 @@
 
 /* Begin PBXFileReference section */
 		3923A6651C133B4D0018B663 /* SupermeshOSX */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SupermeshOSX; sourceTree = BUILT_PRODUCTS_DIR; };
-		3923A66F1C133BCD0018B663 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../src/main.cpp; sourceTree = SOURCE_ROOT; };
 		398D53841C133CAA008218FD /* Awesomium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Awesomium.framework; path = /Library/Frameworks/Awesomium.framework; sourceTree = "<absolute>"; };
 		398D53881C133ED8008218FD /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = ../third/sdl2/lib/libSDL2.a; sourceTree = "<group>"; };
 		398D538A1C134192008218FD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -53,8 +50,10 @@
 		398D539F1C1343F5008218FD /* SMWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMWindow.h; path = ../include/SMWindow.h; sourceTree = SOURCE_ROOT; };
 		398D53A21C134683008218FD /* SMApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SMApplication.cpp; path = ../src/SMApplication.cpp; sourceTree = SOURCE_ROOT; };
 		398D53A41C13469C008218FD /* SMApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMApplication.h; path = ../include/SMApplication.h; sourceTree = SOURCE_ROOT; };
-		398D53A51C134DA6008218FD /* SMTextureSurface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMTextureSurface.h; path = ../include/SMTextureSurface.h; sourceTree = "<group>"; };
-		398D53A61C134DAE008218FD /* SMTextureSurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SMTextureSurface.cpp; path = ../src/SMTextureSurface.cpp; sourceTree = SOURCE_ROOT; };
+		398D53A81C134E38008218FD /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		398D53AE1C135159008218FD /* SMSurface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMSurface.h; path = ../include/SMSurface.h; sourceTree = SOURCE_ROOT; };
+		398D53AF1C135171008218FD /* SMSurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SMSurface.cpp; path = ../src/SMSurface.cpp; sourceTree = SOURCE_ROOT; };
+		398D53B11C135425008218FD /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = ../src/main.mm; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				398D53A91C134E38008218FD /* OpenGL.framework in Frameworks */,
 				398D539B1C1341E1008218FD /* libiconv.dylib in Frameworks */,
 				398D53991C1341D3008218FD /* ForceFeedback.framework in Frameworks */,
 				398D53971C1341CA008218FD /* AudioUnit.framework in Frameworks */,
@@ -97,14 +97,14 @@
 		3923A6671C133B4D0018B663 /* SupermeshOSX */ = {
 			isa = PBXGroup;
 			children = (
-				398D53A61C134DAE008218FD /* SMTextureSurface.cpp */,
-				398D53A51C134DA6008218FD /* SMTextureSurface.h */,
-				3923A66F1C133BCD0018B663 /* main.cpp */,
+				398D53B11C135425008218FD /* main.mm */,
 				398D539C1C13424D008218FD /* SMFramework.h */,
 				398D539D1C1343C7008218FD /* SMWindow.cpp */,
 				398D539F1C1343F5008218FD /* SMWindow.h */,
 				398D53A21C134683008218FD /* SMApplication.cpp */,
 				398D53A41C13469C008218FD /* SMApplication.h */,
+				398D53AE1C135159008218FD /* SMSurface.h */,
+				398D53AF1C135171008218FD /* SMSurface.cpp */,
 			);
 			path = SupermeshOSX;
 			sourceTree = "<group>";
@@ -112,6 +112,7 @@
 		398D53A01C134450008218FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				398D53A81C134E38008218FD /* OpenGL.framework */,
 				398D539A1C1341E1008218FD /* libiconv.dylib */,
 				398D53981C1341D3008218FD /* ForceFeedback.framework */,
 				398D53961C1341CA008218FD /* AudioUnit.framework */,
@@ -183,10 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				398D53A31C134683008218FD /* SMApplication.cpp in Sources */,
-				398D53A11C13464C008218FD /* main.cpp in Sources */,
-				398D539E1C1343C7008218FD /* SMWindow.cpp in Sources */,
-				398D53A71C134DAE008218FD /* SMTextureSurface.cpp in Sources */,
+				398D53B21C135425008218FD /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +272,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CONFIGURATION_BUILD_DIR = "../bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -294,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CONFIGURATION_BUILD_DIR = "../bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

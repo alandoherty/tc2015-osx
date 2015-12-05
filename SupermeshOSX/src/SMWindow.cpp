@@ -7,7 +7,7 @@
 SMWindow::SMWindow(const char* title, SMInt32 width, SMInt32 height) {
     m_Window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED,
                                 SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_HIDDEN);
-    m_Renderer = SDL_CreateRenderer(WINDOW, -1, 0);
+    m_Renderer = SDL_CreateSoftwareRenderer(SDL_GetWindowSurface(WINDOW));
 }
 
 SMWindow::~SMWindow() {
