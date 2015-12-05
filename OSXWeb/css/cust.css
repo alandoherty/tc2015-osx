@@ -62,7 +62,7 @@ h1 {
     font-weight: 100;
 }
 
-.app-status {
+.good {
     color: #2ecc71;
 }
 
@@ -73,6 +73,7 @@ h1 {
 
 /** the table of devices **/
 #rowHeader {
+    color: #fff;
     background: #95a5a6;
     padding: 15px;
 }
@@ -99,6 +100,6 @@ h1 {
     width: 100%;
 }
 
-#clientContainer .client .name {
+#clientContainer .client {
     font-size: 36px;
 }
