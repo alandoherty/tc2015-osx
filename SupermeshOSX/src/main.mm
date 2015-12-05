@@ -3,6 +3,8 @@
 #include <Awesomium/WebCore.h>
 #include <Awesomium/STLHelpers.h>
 
+using namespace Awesomium;
+
 @interface AppDelegate : NSObject<NSApplicationDelegate> {
   NSTimer *timer;
 }
@@ -19,6 +21,35 @@
 - (void)windowDidResize:(NSNotification *)notification;
 @end
 
+
+
+
+
+class SMDataSource : public Awesomium::DataSource {
+public:
+    SMDataSource() {}
+    virtual ~SMDataSource() {}
+    
+    virtual void OnRequest(int request_id,
+                           const Awesomium::ResourceRequest& request,
+                           const Awesomium::WebString& path);
+    
+};
+
+const char* html_str = "fuck SDL";
+
+
+void SMDataSource::OnRequest(int request_id,
+                             const Awesomium::ResourceRequest& request,
+                             const Awesomium::WebString& path) {
+    if (path == WSLit("index.html"))
+        SendResponse(request_id,
+                     strlen(html_str),
+                     (const unsigned char*)html_str,
+                     WSLit("text/html"));
+}
+
+
 int main(int argc, const char **argv)
 {
   NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
@@ -33,11 +64,14 @@ int main(int argc, const char **argv)
   // Create the WebCore
   Awesomium::WebConfig config;
   Awesomium::WebCore* core = Awesomium::WebCore::Initialize(config);
+    
+    Awesomium::WebSession* session = core->CreateWebSession(Awesomium::WSLit(""), Awesomium::WebPreferences());
+    session->AddDataSource(Awesomium::WSLit("Supermesh"), new SMDataSource());
   
   // Create our WebView and start loading a certain URL
-  Awesomium::WebView* view = core->CreateWebView(800, 600, 0, 
-    Awesomium::kWebViewType_Window);
-  view->LoadURL(Awesomium::WebURL(Awesomium::WSLit("file:///Users/alandoherty/Desktop/TechCrunch2015/tc2015-osx/OSXWeb/index.html")));
+  Awesomium::WebView* view = core->CreateWebView(800, 600, session,
+                                                 Awesomium::kWebViewType_Window);
+  view->LoadURL(Awesomium::WebURL(Awesomium::WSLit("asset://Supermesh/index.html")));
   
   // Add our WebView to the Window's content view
   NSView* contentsContainer = [window contentView];

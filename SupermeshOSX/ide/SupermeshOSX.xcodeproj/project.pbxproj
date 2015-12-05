@@ -8,15 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		398D53851C133CAA008218FD /* Awesomium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53841C133CAA008218FD /* Awesomium.framework */; };
-		398D53891C133ED8008218FD /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53881C133ED8008218FD /* libSDL2.a */; };
 		398D538B1C134192008218FD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D538A1C134192008218FD /* Cocoa.framework */; };
 		398D538D1C134197008218FD /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D538C1C134197008218FD /* Carbon.framework */; };
-		398D538F1C13419D008218FD /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D538E1C13419D008218FD /* CoreAudio.framework */; };
-		398D53911C1341B0008218FD /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53901C1341B0008218FD /* IOKit.framework */; };
-		398D53971C1341CA008218FD /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53961C1341CA008218FD /* AudioUnit.framework */; };
-		398D53991C1341D3008218FD /* ForceFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53981C1341D3008218FD /* ForceFeedback.framework */; };
-		398D539B1C1341E1008218FD /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D539A1C1341E1008218FD /* libiconv.dylib */; };
-		398D53A91C134E38008218FD /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53A81C134E38008218FD /* OpenGL.framework */; };
 		398D53B21C135425008218FD /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 398D53B11C135425008218FD /* main.mm */; };
 /* End PBXBuildFile section */
 
@@ -38,15 +31,8 @@
 		398D53881C133ED8008218FD /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = ../third/sdl2/lib/libSDL2.a; sourceTree = "<group>"; };
 		398D538A1C134192008218FD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		398D538C1C134197008218FD /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
-		398D538E1C13419D008218FD /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		398D53901C1341B0008218FD /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		398D53921C1341B7008218FD /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		398D53941C1341C2008218FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		398D53961C1341CA008218FD /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
-		398D53981C1341D3008218FD /* ForceFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForceFeedback.framework; path = System/Library/Frameworks/ForceFeedback.framework; sourceTree = SDKROOT; };
-		398D539A1C1341E1008218FD /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		398D539C1C13424D008218FD /* SMFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMFramework.h; path = ../include/SMFramework.h; sourceTree = SOURCE_ROOT; };
-		398D53A81C134E38008218FD /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		398D53B11C135425008218FD /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = ../src/main.mm; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -55,15 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				398D53A91C134E38008218FD /* OpenGL.framework in Frameworks */,
-				398D539B1C1341E1008218FD /* libiconv.dylib in Frameworks */,
-				398D53991C1341D3008218FD /* ForceFeedback.framework in Frameworks */,
-				398D53971C1341CA008218FD /* AudioUnit.framework in Frameworks */,
-				398D53911C1341B0008218FD /* IOKit.framework in Frameworks */,
-				398D538F1C13419D008218FD /* CoreAudio.framework in Frameworks */,
 				398D538D1C134197008218FD /* Carbon.framework in Frameworks */,
 				398D538B1C134192008218FD /* Cocoa.framework in Frameworks */,
-				398D53891C133ED8008218FD /* libSDL2.a in Frameworks */,
 				398D53851C133CAA008218FD /* Awesomium.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,14 +79,7 @@
 		398D53A01C134450008218FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				398D53A81C134E38008218FD /* OpenGL.framework */,
-				398D539A1C1341E1008218FD /* libiconv.dylib */,
-				398D53981C1341D3008218FD /* ForceFeedback.framework */,
-				398D53961C1341CA008218FD /* AudioUnit.framework */,
-				398D53941C1341C2008218FD /* Foundation.framework */,
 				398D53921C1341B7008218FD /* CoreFoundation.framework */,
-				398D53901C1341B0008218FD /* IOKit.framework */,
-				398D538E1C13419D008218FD /* CoreAudio.framework */,
 				398D538C1C134197008218FD /* Carbon.framework */,
 				398D538A1C134192008218FD /* Cocoa.framework */,
 				398D53881C133ED8008218FD /* libSDL2.a */,
@@ -266,11 +238,10 @@
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
+				GCC_ENABLE_CPP_RTTI = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks/Awesomium.framework/Versions/A",
-					"$(ProjectDir)/../third/sdl2/lib/**",
-					"/Users/alandoherty/Desktop/TechCrunch2015/tc2015-osx/SupermeshOSX/third/sdl2/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../include/**";
@@ -287,11 +258,10 @@
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
+				GCC_ENABLE_CPP_RTTI = NO;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks/Awesomium.framework/Versions/A",
-					"$(ProjectDir)/../third/sdl2/lib/**",
-					"/Users/alandoherty/Desktop/TechCrunch2015/tc2015-osx/SupermeshOSX/third/sdl2/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../include/**";
