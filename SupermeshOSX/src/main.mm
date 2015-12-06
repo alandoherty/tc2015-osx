@@ -1,13 +1,13 @@
 #include "SMFramework.h"
 #include "SMApplication.h"
 #import <Cocoa/Cocoa.h>
-
 extern "C" {
-	#include "libavformat/avformat.h"
-	#include "libavcodec/avcodec.h"
-	#include "libavutil/avutil.h"
-	#include "libavdevice/avdevice.h"
+#include "libavformat/avformat.h"
+#include "libavcodec/avcodec.h"
+#include "libavutil/avutil.h"
+#include "libavdevice/avdevice.h"
 }
+
 
 @interface AppDelegate : NSObject<NSApplicationDelegate> {
     NSTimer *timer;
@@ -90,8 +90,7 @@ int main(int argc, char *argv[]) {
 		printf("Please provide a movie file\n");
 		return -1;
 	}
-	// Register all formats and codecs
-	av_register_all();
+	
 	
 	pFormatCtx = avformat_alloc_context();
 	
@@ -209,6 +208,9 @@ int main(int argc, const char **argv)
     [winDelegate release];
     
     [pool release];
+	
+	// shutdown application
+	g_App->Shutdown();
     return 0;
 }
 

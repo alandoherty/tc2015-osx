@@ -1,6 +1,11 @@
 #include "SMApplication.h"
 #include "SMDataSource.h"
+#include "SMVideoFile.h"
 #include "SMMethodHandler.h"
+extern "C" {
+    #include "libavformat/avformat.h"
+}
+
 
 using namespace Awesomium;
 
@@ -10,6 +15,9 @@ using namespace Awesomium;
 // Initialize the application.
 //------------------------------------------------------------------------
 WebView* SMApplication::Initialize() {
+    // initialize all codecs
+    av_register_all();
+    
     // setup config
     WebConfig config;
     config.remote_debugging_host = Awesomium::WSLit("127.0.0.1");
@@ -28,7 +36,18 @@ WebView* SMApplication::Initialize() {
     return m_WebView;
 }
 
+//------------------------------------------------------------------------
+// Shutdown the application.
+//------------------------------------------------------------------------
+void SMApplication::Shutdown() {
+    delete m_VideoFile;
+}
+
 void SMApplication::Open(const char* path) {
+    // open video file
+    m_VideoFile = new SMVideoFile(path);
+    
+    // trigger status
     TriggerStatus(path);
 }
 

@@ -2,6 +2,7 @@
 #define SMApplication_h
 
 #include "SMFramework.h"
+#include "SMVideoFile.h"
 #include <Awesomium/WebCore.h>
 
 class SMApplication {
@@ -11,6 +12,8 @@ private:
     Awesomium::WebSession* m_WebSession;
     Awesomium::JSObject m_Global;
     Awesomium::JSObject m_StatusFunc;
+    
+    SMVideoFile* m_VideoFile;
 public:
     Awesomium::WebView* Initialize();
     void Run();
