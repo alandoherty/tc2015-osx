@@ -40,12 +40,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../src/SMMethodHandler.cpp"
-            timestampString = "471056294.949663"
+            timestampString = "471060531.241936"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "SMMethodHandler::OnMethodCall(Awesomium::WebView* caller, unsigned int remote_object_id, const Awesomium::WebString&amp; method_name, const Awesomium::JSArray&amp; args)"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "SMMethodHandler::OnMethodCallWithReturnValue(Awesomium::WebView* caller, unsigned int remote_object_id, const Awesomium::WebString&amp; method_name, const Awesomium::JSArray&amp; args)"
             landmarkType = "5">
             <Locations>
                <Location
@@ -103,11 +103,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../src/SMMethodHandler.cpp"
-            timestampString = "471056294.949663"
+            timestampString = "471060531.241936"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "SMMethodHandler::OnMethodCallWithReturnValue(Awesomium::WebView* caller, unsigned int remote_object_id, const Awesomium::WebString&amp; method_name, const Awesomium::JSArray&amp; args)"
             landmarkType = "5">
          </BreakpointContent>
@@ -135,11 +135,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../src/SMMethodHandler.cpp"
-            timestampString = "471056294.949663"
+            timestampString = "471057363.594175"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "SMMethodHandler::OnMethodCall(Awesomium::WebView* caller, unsigned int remote_object_id, const Awesomium::WebString&amp; method_name, const Awesomium::JSArray&amp; args)"
             landmarkType = "5">
          </BreakpointContent>
@@ -190,6 +190,38 @@
             endingLineNumber = "12"
             landmarkName = "SMMethodHandler::OnMethodCall(Awesomium::WebView* caller, unsigned int remote_object_id, const Awesomium::WebString&amp; method_name, const Awesomium::JSArray&amp; args)"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../include/SMApplication.h"
+            timestampString = "471060838.208634"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "class SMApplication"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../src/main.mm"
+            timestampString = "471059190.684293"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
+            landmarkName = "main(int argc, const char **argv)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

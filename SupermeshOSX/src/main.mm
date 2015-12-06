@@ -193,7 +193,8 @@ int main(int argc, const char **argv)
     
     // Activate the window
     [window makeKeyAndOrderFront:nil];
-    
+	
+	g_App->Run();
     [NSApp setActivationPolicy:NSApplicationActivationPolicyRegular];
     NSObject<NSApplicationDelegate>* appDelegate = [[AppDelegate alloc] init];
     [NSApp setDelegate:appDelegate];

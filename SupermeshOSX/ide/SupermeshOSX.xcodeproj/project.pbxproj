@@ -24,6 +24,7 @@
 		398D54081C13B3A4008218FD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D54071C13B3A4008218FD /* libz.dylib */; };
 		398D540A1C13B629008218FD /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D54091C13B629008218FD /* libbz2.dylib */; };
 		398D540C1C13B97F008218FD /* SMFramework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 398D540B1C13B97F008218FD /* SMFramework.cpp */; };
+		398D540E1C13D1EC008218FD /* SMVideoFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 398D540D1C13D1EC008218FD /* SMVideoFile.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +65,8 @@
 		398D54071C13B3A4008218FD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		398D54091C13B629008218FD /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
 		398D540B1C13B97F008218FD /* SMFramework.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SMFramework.cpp; path = ../src/SMFramework.cpp; sourceTree = SOURCE_ROOT; };
+		398D540D1C13D1EC008218FD /* SMVideoFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SMVideoFile.cpp; path = ../src/SMVideoFile.cpp; sourceTree = SOURCE_ROOT; };
+		398D540F1C13D20B008218FD /* SMVideoFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMVideoFile.h; path = ../include/SMVideoFile.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				398D53ED1C137E17008218FD /* SMMethodHandler.h */,
 				398D53EE1C137E27008218FD /* SMMethodHandler.cpp */,
 				398D540B1C13B97F008218FD /* SMFramework.cpp */,
+				398D540D1C13D1EC008218FD /* SMVideoFile.cpp */,
+				398D540F1C13D20B008218FD /* SMVideoFile.h */,
 			);
 			path = SupermeshOSX;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 				398D53EB1C1372A4008218FD /* SMApplication.cpp in Sources */,
 				398D53E81C1367DA008218FD /* SMDataSource.cpp in Sources */,
 				398D53B21C135425008218FD /* main.mm in Sources */,
+				398D540E1C13D1EC008218FD /* SMVideoFile.cpp in Sources */,
 				398D540C1C13B97F008218FD /* SMFramework.cpp in Sources */,
 				398D53EF1C137E27008218FD /* SMMethodHandler.cpp in Sources */,
 			);

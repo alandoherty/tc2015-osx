@@ -50,7 +50,7 @@ $(document).ready(function() {
 
     var seconds = 0;
     var minutes = 0;
-
+    /*
     var line = new ProgressBar.Circle('#progressBar', {
         strokeWidth: 4,
         color: '#3498db',
@@ -65,6 +65,18 @@ $(document).ready(function() {
         duration: 15000
     }, function() {
         console.log('Animation has finished');
+    });*/
+
+    var debugSupermesh = false;
+    if (debugSupermesh) {
+        var str = "";
+        for(var k in supermesh)
+            str += k + " : " + toString(supermesh[k]) + "\n";
+        supermesh.message(str);
+    }
+
+    supermesh.on("opened", function(path) {
+        supermesh.message("we have opened " + path);
     });
 
     setInterval(function() {

@@ -25,13 +25,23 @@ void SMMethodHandler::OnMethodCall(Awesomium::WebView* caller,
         // get path to open
         char* pathToOpen = SMOpenFileDialog();
         
+        if (pathToOpen == NULL)
+            return;
+        
         // trigger application
         g_App->Open(pathToOpen);
         
         // free
         free(pathToOpen);
+    } else if (method_name.Compare(Awesomium::WSLit("on")) == 0) {
+        Awesomium::JSValue nameVal = args.At(0);
+        Awesomium::WebString nameStr = nameVal.ToString();
+        
+        Awesomium::JSValue cbVal = args.At(1);
+        Awesomium::JSObject& cbStr = cbVal.ToObject();
+        
+        g_App->On(nameStr, cbStr);
     }
-    
 }
 
 Awesomium::JSValue SMMethodHandler::OnMethodCallWithReturnValue(Awesomium::WebView* caller,
