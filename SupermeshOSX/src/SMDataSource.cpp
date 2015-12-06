@@ -45,6 +45,10 @@ void SMDataSource::OnRequest(int request_id,
     FILE* file = fopen(actualPath, "r");
     
     if (file == NULL) {
+        // error
+        SMMessageBox(actualPath, "The file is missing", MB_ERROR);
+        
+        // 404 page
         static const char* notFound = "404 not found";
         SendResponse(request_id, strlen(notFound), (unsigned char*)notFound, WSLit("text/html"));
     } else {
@@ -52,8 +56,8 @@ void SMDataSource::OnRequest(int request_id,
         SMInt32 fileSize = static_cast<SMInt32>(fsize(actualPath));
         
         if (fileSize == -1) {
-            static const char* notFound = "File size failed";
-            SendResponse(request_id, strlen(notFound), (unsigned char*)notFound, WSLit("text/html"));
+            // error
+            SMMessageBox(actualPath, "The file size could not be gained", MB_ERROR);
         } else {
             char* buff = (char*)malloc(fileSize + 1);
             buff[fileSize - 1] = '\0';

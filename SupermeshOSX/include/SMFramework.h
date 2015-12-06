@@ -8,13 +8,15 @@
 #include <iostream>
 #include <cstring>
 #include <cstdlib>
+#include <unistd.h>
+
 
 //------------------------------------------------------------------------
 // Basic defines
 //------------------------------------------------------------------------
 #define APP_NAME "Supermesh"
-#define APP_WIDTH 800
-#define APP_HEIGHT 600
+#define APP_WIDTH 1440
+#define APP_HEIGHT 900
 
 //------------------------------------------------------------------------
 // Basic types
@@ -30,6 +32,22 @@ typedef bool SMBool;
 //------------------------------------------------------------------------
 // Basic includes
 //------------------------------------------------------------------------
+#include <Awesomium/WebCore.h>
+#include <Awesomium/STLHelpers.h>
+
+//------------------------------------------------------------------------
+// Message boxes.
+//------------------------------------------------------------------------
+#define MB_OK 0
+#define MB_ERROR 1
+SMInt32 SMMessageBox(const char* msg, const char* caption, SMInt32 mbFlags);
+
+//------------------------------------------------------------------------
+// Converts and allocates a WebString into an UTF-8
+// You must free(ptr) when done.
+//------------------------------------------------------------------------
+char* SMWebStrToUTF8(Awesomium::WebString& str);
+
 
 
 #endif

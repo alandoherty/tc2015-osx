@@ -12,6 +12,18 @@
 		398D538D1C134197008218FD /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D538C1C134197008218FD /* Carbon.framework */; };
 		398D53B21C135425008218FD /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 398D53B11C135425008218FD /* main.mm */; };
 		398D53E81C1367DA008218FD /* SMDataSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 398D53E71C1367DA008218FD /* SMDataSource.cpp */; };
+		398D53EB1C1372A4008218FD /* SMApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 398D53EA1C1372A4008218FD /* SMApplication.cpp */; };
+		398D53EF1C137E27008218FD /* SMMethodHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 398D53EE1C137E27008218FD /* SMMethodHandler.cpp */; };
+		398D54001C13B366008218FD /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53F01C138D88008218FD /* libavcodec.a */; };
+		398D54011C13B366008218FD /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53F11C138D88008218FD /* libavdevice.a */; };
+		398D54021C13B366008218FD /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53F21C138D88008218FD /* libavfilter.a */; };
+		398D54031C13B366008218FD /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53F31C138D88008218FD /* libavformat.a */; };
+		398D54041C13B366008218FD /* libavresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53FE1C13B345008218FD /* libavresample.a */; };
+		398D54051C13B366008218FD /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53F41C138D88008218FD /* libavutil.a */; };
+		398D54061C13B366008218FD /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D53F61C138D88008218FD /* libswscale.a */; };
+		398D54081C13B3A4008218FD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D54071C13B3A4008218FD /* libz.dylib */; };
+		398D540A1C13B629008218FD /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 398D54091C13B629008218FD /* libbz2.dylib */; };
+		398D540C1C13B97F008218FD /* SMFramework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 398D540B1C13B97F008218FD /* SMFramework.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,9 +46,24 @@
 		398D538C1C134197008218FD /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		398D53921C1341B7008218FD /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		398D539C1C13424D008218FD /* SMFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMFramework.h; path = ../include/SMFramework.h; sourceTree = SOURCE_ROOT; };
-		398D53B11C135425008218FD /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = ../src/main.mm; sourceTree = SOURCE_ROOT; };
+		398D53B11C135425008218FD /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = ../src/main.mm; sourceTree = SOURCE_ROOT; usesTabs = 1; };
 		398D53E71C1367DA008218FD /* SMDataSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SMDataSource.cpp; path = ../src/SMDataSource.cpp; sourceTree = SOURCE_ROOT; };
 		398D53E91C1367E6008218FD /* SMDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMDataSource.h; path = ../include/SMDataSource.h; sourceTree = SOURCE_ROOT; };
+		398D53EA1C1372A4008218FD /* SMApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SMApplication.cpp; path = ../src/SMApplication.cpp; sourceTree = SOURCE_ROOT; };
+		398D53EC1C1372C4008218FD /* SMApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMApplication.h; path = ../include/SMApplication.h; sourceTree = SOURCE_ROOT; };
+		398D53ED1C137E17008218FD /* SMMethodHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMMethodHandler.h; path = ../include/SMMethodHandler.h; sourceTree = SOURCE_ROOT; };
+		398D53EE1C137E27008218FD /* SMMethodHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SMMethodHandler.cpp; path = ../src/SMMethodHandler.cpp; sourceTree = SOURCE_ROOT; };
+		398D53F01C138D88008218FD /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = ../third/ffmpeg/lib/libavcodec.a; sourceTree = "<group>"; };
+		398D53F11C138D88008218FD /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = ../third/ffmpeg/lib/libavdevice.a; sourceTree = "<group>"; };
+		398D53F21C138D88008218FD /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = ../third/ffmpeg/lib/libavfilter.a; sourceTree = "<group>"; };
+		398D53F31C138D88008218FD /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = ../third/ffmpeg/lib/libavformat.a; sourceTree = "<group>"; };
+		398D53F41C138D88008218FD /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ../third/ffmpeg/lib/libavutil.a; sourceTree = "<group>"; };
+		398D53F51C138D88008218FD /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = ../third/ffmpeg/lib/libswresample.a; sourceTree = "<group>"; };
+		398D53F61C138D88008218FD /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = ../third/ffmpeg/lib/libswscale.a; sourceTree = "<group>"; };
+		398D53FE1C13B345008218FD /* libavresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavresample.a; path = ../third/ffmpeg/lib/libavresample.a; sourceTree = "<group>"; };
+		398D54071C13B3A4008218FD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		398D54091C13B629008218FD /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
+		398D540B1C13B97F008218FD /* SMFramework.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SMFramework.cpp; path = ../src/SMFramework.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +71,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				398D540A1C13B629008218FD /* libbz2.dylib in Frameworks */,
+				398D54031C13B366008218FD /* libavformat.a in Frameworks */,
+				398D54081C13B3A4008218FD /* libz.dylib in Frameworks */,
+				398D54001C13B366008218FD /* libavcodec.a in Frameworks */,
+				398D54011C13B366008218FD /* libavdevice.a in Frameworks */,
+				398D54021C13B366008218FD /* libavfilter.a in Frameworks */,
+				398D54041C13B366008218FD /* libavresample.a in Frameworks */,
+				398D54051C13B366008218FD /* libavutil.a in Frameworks */,
+				398D54061C13B366008218FD /* libswscale.a in Frameworks */,
 				398D538D1C134197008218FD /* Carbon.framework in Frameworks */,
 				398D538B1C134192008218FD /* Cocoa.framework in Frameworks */,
 				398D53851C133CAA008218FD /* Awesomium.framework in Frameworks */,
@@ -77,6 +113,11 @@
 				398D53E71C1367DA008218FD /* SMDataSource.cpp */,
 				398D53B11C135425008218FD /* main.mm */,
 				398D539C1C13424D008218FD /* SMFramework.h */,
+				398D53EA1C1372A4008218FD /* SMApplication.cpp */,
+				398D53EC1C1372C4008218FD /* SMApplication.h */,
+				398D53ED1C137E17008218FD /* SMMethodHandler.h */,
+				398D53EE1C137E27008218FD /* SMMethodHandler.cpp */,
+				398D540B1C13B97F008218FD /* SMFramework.cpp */,
 			);
 			path = SupermeshOSX;
 			sourceTree = "<group>";
@@ -84,6 +125,16 @@
 		398D53A01C134450008218FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				398D54091C13B629008218FD /* libbz2.dylib */,
+				398D54071C13B3A4008218FD /* libz.dylib */,
+				398D53FE1C13B345008218FD /* libavresample.a */,
+				398D53F01C138D88008218FD /* libavcodec.a */,
+				398D53F11C138D88008218FD /* libavdevice.a */,
+				398D53F21C138D88008218FD /* libavfilter.a */,
+				398D53F31C138D88008218FD /* libavformat.a */,
+				398D53F41C138D88008218FD /* libavutil.a */,
+				398D53F51C138D88008218FD /* libswresample.a */,
+				398D53F61C138D88008218FD /* libswscale.a */,
 				398D53921C1341B7008218FD /* CoreFoundation.framework */,
 				398D538C1C134197008218FD /* Carbon.framework */,
 				398D538A1C134192008218FD /* Cocoa.framework */,
@@ -149,8 +200,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				398D53EB1C1372A4008218FD /* SMApplication.cpp in Sources */,
 				398D53E81C1367DA008218FD /* SMDataSource.cpp in Sources */,
 				398D53B21C135425008218FD /* main.mm in Sources */,
+				398D540C1C13B97F008218FD /* SMFramework.cpp in Sources */,
+				398D53EF1C137E27008218FD /* SMMethodHandler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,12 +299,14 @@
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_ENABLE_CPP_RTTI = NO;
+				LD_NO_PIE = YES;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks/Awesomium.framework/Versions/A",
+					"/Users/alandoherty/Desktop/TechCrunch2015/tc2015-osx/SupermeshOSX/third/ffmpeg/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../include/**";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../include/** $(PROJECT_DIR)/../third/ffmpeg/include/**";
 			};
 			name = Debug;
 		};
@@ -265,12 +321,14 @@
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_ENABLE_CPP_RTTI = NO;
+				LD_NO_PIE = YES;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks/Awesomium.framework/Versions/A",
+					"/Users/alandoherty/Desktop/TechCrunch2015/tc2015-osx/SupermeshOSX/third/ffmpeg/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../include/**";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../include/** $(PROJECT_DIR)/../third/ffmpeg/include/**";
 			};
 			name = Release;
 		};
