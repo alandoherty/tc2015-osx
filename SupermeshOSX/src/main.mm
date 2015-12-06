@@ -171,7 +171,6 @@ int main(int argc, const char **argv)
                         autorelease];
     [window cascadeTopLeftFromPoint:NSMakePoint(20,20)];
     [window setTitle:@APP_NAME];
-    
 	// setup application
 	g_App = new SMApplication();
 	Awesomium::WebView* view = g_App->Initialize();
@@ -183,6 +182,8 @@ int main(int argc, const char **argv)
     contentsNativeViewFrame.origin = NSZeroPoint;
     [contentsNativeView setFrame:contentsNativeViewFrame];
     [contentsContainer addSubview:contentsNativeView];
+	
+	[contentsNativeView registerForDraggedTypes:[NSArray arrayWithObjects:NSFilenamesPboardType, nil]];
  
 	
     // create delegate
@@ -198,6 +199,7 @@ int main(int argc, const char **argv)
     [NSApp setDelegate:appDelegate];
     [NSApp activateIgnoringOtherApps:YES];
     [NSApp run];
+	
     
     [NSApp setDelegate:nil];
     [appDelegate release];
@@ -208,6 +210,7 @@ int main(int argc, const char **argv)
     [pool release];
     return 0;
 }
+
 
 @implementation AppDelegate
 
@@ -237,6 +240,9 @@ int main(int argc, const char **argv)
 
 @end
 
+//------------------------------------------------------------------------
+// The window view.
+//------------------------------------------------------------------------
 @implementation WinDelegate
 
 @synthesize webView;
@@ -248,3 +254,45 @@ int main(int argc, const char **argv)
 }
 
 @end
+
+//------------------------------------------------------------------------
+// Opens a file dialog.
+//------------------------------------------------------------------------
+char* SMOpenFileDialog() {
+	// Create a File Open Dialog class.
+	NSOpenPanel* openDlg = [NSOpenPanel openPanel];
+	
+	// Set array of file types
+	NSArray *fileTypesArray;
+	fileTypesArray = [NSArray arrayWithObjects:@"mov", @"mp4", nil];
+	
+	// Enable options in the dialog.
+	[openDlg setCanChooseFiles:YES];
+	[openDlg setAllowedFileTypes:fileTypesArray];
+	[openDlg setAllowsMultipleSelection:FALSE];
+	[openDlg setTitle:@"Open input"];
+	
+	// Display the dialog box.  If the OK pressed,
+	// process the files.
+	if ( [openDlg runModal] == NSOKButton ) {
+		
+		// Gets list of all files selected
+		NSArray *files = [openDlg URLs];
+		
+		// Loop through the files and process them.
+		for( int i = 0; i < [files count]; i++ ) {
+			// get cstring of apth
+			NSString* str = [[files objectAtIndex:i] path];
+			const char* strPtr = [str cStringUsingEncoding:NSASCIIStringEncoding];
+			
+			// convert to char*
+			char* strPtrAll = (char*)malloc(strlen(strPtr) + 1);
+			strcpy(strPtrAll, strPtr);
+			return strPtrAll;
+		}
+		
+		return NULL;
+	} else {
+		return NULL;
+	}
+}

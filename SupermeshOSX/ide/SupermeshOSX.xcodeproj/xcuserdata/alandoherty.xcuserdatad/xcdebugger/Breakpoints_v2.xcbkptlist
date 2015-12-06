@@ -40,11 +40,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../src/SMMethodHandler.cpp"
-            timestampString = "471042587.206665"
+            timestampString = "471056294.949663"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "SMMethodHandler::OnMethodCall(Awesomium::WebView* caller, unsigned int remote_object_id, const Awesomium::WebString&amp; method_name, const Awesomium::JSArray&amp; args)"
             landmarkType = "5">
             <Locations>
@@ -103,11 +103,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../src/SMMethodHandler.cpp"
-            timestampString = "471042587.206665"
+            timestampString = "471056294.949663"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "SMMethodHandler::OnMethodCallWithReturnValue(Awesomium::WebView* caller, unsigned int remote_object_id, const Awesomium::WebString&amp; method_name, const Awesomium::JSArray&amp; args)"
             landmarkType = "5">
          </BreakpointContent>
@@ -119,11 +119,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../src/SMMethodHandler.cpp"
-            timestampString = "471042587.206665"
+            timestampString = "471055709.404897"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "SMMethodHandler::OnMethodCall(Awesomium::WebView* caller, unsigned int remote_object_id, const Awesomium::WebString&amp; method_name, const Awesomium::JSArray&amp; args)"
             landmarkType = "5">
          </BreakpointContent>
@@ -135,45 +135,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../src/SMMethodHandler.cpp"
-            timestampString = "471042873.354508"
+            timestampString = "471056294.949663"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "SMMethodHandler::OnMethodCall(Awesomium::WebView* caller, unsigned int remote_object_id, const Awesomium::WebString&amp; method_name, const Awesomium::JSArray&amp; args)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../src/SMMethodHandler.cpp"
+            timestampString = "471055709.404897"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
             landmarkName = "SMMethodHandler::OnMethodCall(Awesomium::WebView* caller, unsigned int remote_object_id, const Awesomium::WebString&amp; method_name, const Awesomium::JSArray&amp; args)"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SMMethodHandler::OnMethodCall(Awesomium::WebView*, unsigned int, Awesomium::WebString const&amp;, Awesomium::JSArray const&amp;)"
-                  moduleName = "SupermeshOSX"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alandoherty/Desktop/TechCrunch2015/tc2015-osx/SupermeshOSX/src/SMMethodHandler.cpp"
-                  timestampString = "471043197.484239"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "270">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SMMethodHandler::OnMethodCall(Awesomium::WebView*, unsigned int, Awesomium::WebString const&amp;, Awesomium::JSArray const&amp;)"
-                  moduleName = "SupermeshOSX"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alandoherty/Desktop/TechCrunch2015/tc2015-osx/SupermeshOSX/src/SMMethodHandler.cpp"
-                  timestampString = "471043197.484712"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "281">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../src/SMMethodHandler.cpp"
+            timestampString = "471055624.077745"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "SMMethodHandler::OnMethodCall(Awesomium::WebView* caller, unsigned int remote_object_id, const Awesomium::WebString&amp; method_name, const Awesomium::JSArray&amp; args)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../src/SMMethodHandler.cpp"
+            timestampString = "471055734.913633"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "SMMethodHandler::OnMethodCall(Awesomium::WebView* caller, unsigned int remote_object_id, const Awesomium::WebString&amp; method_name, const Awesomium::JSArray&amp; args)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
