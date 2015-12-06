@@ -126,3 +126,27 @@ h1 {
 #clientContainer .client .name {
     padding-left: 15px;
 }
+
+#selectionArea .col-md-6 {
+    padding: 0px;
+}
+
+.actionButton {
+    width: 90%;
+    height: 50px;
+    font-size: 24px;
+}
+
+#compilerOutput {
+    width: 75%;
+    position: absolute;
+    bottom: 0;
+    display: none;
+    left: 25%;
+    background: #1f1f1f;
+    height: 250px;
+    color: #28FE14;
+    font-family: monospace;
+    text-align: left;
+    font-size: 24px;
+}

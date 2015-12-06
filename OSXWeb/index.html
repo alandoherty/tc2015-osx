@@ -22,7 +22,7 @@
 <div id="sidebar" class="col-md-3">
     <div class="header">
         <h1 id="title">Supermesh</h1>
-        <h2 id="tagline"><!--Just another mesh networked super computer-->This thing we're building</h2>
+        <h2 id="tagline">Just another mesh networked super computer <!--This thing we're building--></h2>
     </div>
     <div class="content row">
         <div class="col-sm-3 statusHeaders">
@@ -37,6 +37,18 @@
         </div>
     </div>
     <div id="progressBar" class="completion">
+    </div>
+    <div id="selectionArea">
+        <div class="col-md-6">
+            <button id="encoderButton" type="button" class="actionButton btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                Encoder
+            </button>
+        </div>
+        <div class="col-md-6">
+            <button id="compilerButton" type="button" class="actionButton btn btn-warning" data-toggle="button" aria-pressed="false" autocomplete="off">
+                Compiler
+            </button>
+        </div>
     </div>
 </div>
 <div class="col-md-9 contentContainer">
@@ -72,6 +84,11 @@
             </div>
         </div>
     </div>
+</div>
+<div id="compilerOutput" class="col-md-9">
+    > compiling asdf<br/>
+    > compiling xys<br/>
+    > compiling asdhqwofh<br/>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>

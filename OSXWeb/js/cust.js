@@ -48,13 +48,14 @@ function removeDevice(deviceID) {
 $(document).ready(function() {
     setLineHeights();
 
-    var seconds = 15;
+    var seconds = 0;
+    var minutes = 0;
 
     var line = new ProgressBar.Circle('#progressBar', {
         strokeWidth: 4,
         color: '#3498db',
         text: {
-            value: "00:15",
+            value: "00:00",
             style: {
                 color: "#fff"
             }
@@ -67,11 +68,27 @@ $(document).ready(function() {
     });
 
     setInterval(function() {
-        seconds--;
+        seconds++;
         if(seconds < 10) {
-            line.setText("00:0" + seconds);
-        } else {
-            line.setText("00:" + seconds);
+            if(minutes < 10) {
+                line.setText("0" + minutes + ":0" + seconds);
+            } else {
+                line.setText(minutes + ":0" + seconds);
+            }
+        } else if(seconds < 60) {
+            if(minutes < 10) {
+                line.setText("0" + minutes + ":" + seconds);
+            } else {
+                line.setText(minutes + ":" + seconds);
+            }
+        } else if(seconds == 60) {
+            minutes++;
+            seconds = 0;
+            if(minutes < 10) {
+                line.setText("0" + minutes + ":0" + seconds);
+            } else {
+                line.setText(minutes + ":0" + seconds);
+            }
         }
     }, 1000);
 
@@ -90,3 +107,11 @@ $(document).ready(function() {
         statusText: "lost connection"
     })
 });
+
+$("#compilerButton").on('click', function() {
+    if($(this).attr('aria-pressed') == "false") {
+        $('#compilerOutput').slideDown(300);
+    } else {
+        $('#compilerOutput').slideUp(300);
+    }
+})
